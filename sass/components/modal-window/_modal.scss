@@ -1,0 +1,98 @@
+/*   Modal window   */
+@import "./backdrop";
+@import "./custom-checkbox";
+
+.modal {
+  @include centering-xy;
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  background-color: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform $timing-foo;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: $secondary-text-color;
+  margin-bottom: 12px;
+}
+
+.modal__form {
+  text-align: left;
+  width: 448px;
+}
+.modal__form-field {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+}
+.modal__icon-wrap {
+  position: relative;
+}
+
+.modal__input {
+  width: 100%;
+  margin: 0;
+  padding: 13px 15px 13px 42px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color $timing-foo;
+}
+
+.modal__input,
+.modal__textarea {
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
+}
+
+.modal__form-field:focus-within .modal__icon {
+  fill: $accent-color;
+}
+
+.modal__input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__label {
+  margin-bottom: 4px;
+}
+.modal__icon-wrap {
+  position: relative;
+}
+.modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: $secondary-text-color;
+}
+
+.modal__textarea {
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  margin: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal__comments {
+  margin-bottom: 20px;
+}

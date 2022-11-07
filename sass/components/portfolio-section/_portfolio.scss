@@ -1,0 +1,27 @@
+/* portfolio section */
+
+@import "./portfolio-card";
+
+.portfolio {
+  padding: 94px 0 94px 0;
+}
+
+.filter-list {
+  @extend %list-unstyled;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.filter-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio__list {
+  @extend %list-unstyled;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio__item {
+  flex-basis: calc((100% - 60px) / 3);
+}

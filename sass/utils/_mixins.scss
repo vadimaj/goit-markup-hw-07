@@ -1,0 +1,12 @@
+@mixin center-content() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin сentering-xy() {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

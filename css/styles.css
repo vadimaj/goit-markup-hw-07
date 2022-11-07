@@ -55,14 +55,14 @@ h3 {
   padding: 0 15px;
   margin: 0 auto;
 }
-.page-header {
-  border-bottom: 1px solid var(--primary-border-color);
-}
+
 .link-unstyled {
   text-decoration: none;
   font-style: normal;
 }
-
+.page-header {
+  border-bottom: 1px solid var(--primary-border-color);
+}
 /*  Logo  */
 
 .logo {

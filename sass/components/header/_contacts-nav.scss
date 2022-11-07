@@ -1,0 +1,22 @@
+/*Contacts nav */
+
+.contacts-nav {
+  @extend %list-unstyled;
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+}
+.contacts-nav__link {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: $primary-text-color;
+  transition: color $timing-foo;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.contacts-nav__icon {
+  fill: currentColor;
+}
