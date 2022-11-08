@@ -4,10 +4,11 @@
 //@import "../../utils/mixins";
 
 .modal {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include сentering-xy();
+  // position: relative;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
   padding: 40px;
