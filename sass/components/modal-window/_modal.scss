@@ -1,9 +1,13 @@
 /*   Modal window   */
 @import "./backdrop";
 @import "./custom-checkbox";
+//@import "../../utils/mixins";
 
 .modal {
-  @include centering-xy;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
   padding: 40px;
